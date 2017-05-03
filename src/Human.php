@@ -61,7 +61,7 @@ class Human
     /**
      * @return int
      */
-    public function getWeight(): int
+    public function getWeight()
     {
         return $this->weight;
     }
