@@ -9,8 +9,17 @@ require_once "vendor/autoload.php";
 
 use Hetic\Human;
 
-$human = new Human(80);
-echo $human->getWeight().PHP_EOL;
-$human->setWeight(82);
-echo $human->getWeight().PHP_EOL;
-
+echo "Count:".Human::getCount().PHP_EOL;
+$humans = [new Human("Bob")];
+echo "Count:".Human::getCount().PHP_EOL;
+$humans = [
+    new Human("Bob"),
+    new Human("Kelly"),
+    new Human("Alastair", "Reynolds"),
+    new Human("RM", "Melluch"),
+    new Human("Number 2"),
+    new Human("Number 3"),
+    new Human("Hortense"),
+];
+echo "Count:".Human::getCount().PHP_EOL;
+var_dump($humans);
